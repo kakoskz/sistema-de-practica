@@ -1,6 +1,6 @@
 CREATE TABLE Estudiante(
     nombreCompleto VARCHAR(200) NOT NULL,
-    rut INT PRIMARY KEY ,
+    rut VARCHAR(12) PRIMARY KEY ,
     anoLectivo VARCHAR(10),
     domicilio VARCHAR(50),
     telefono VARCHAR(12),
@@ -16,7 +16,7 @@ CREATE TABLE CentroPractica(
     descripcion VARCHAR(500),
     habilidadesEsperadas TEXT ,
     direccion VARCHAR(250) NOT NULL
-)
+);
 
 
 CREATE TABLE Bitacora(
@@ -25,4 +25,13 @@ CREATE TABLE Bitacora(
     desafios VARCHAR(500)NOT NULL,
     logros VARCHAR(500)NOT NULL,
     fechaRegistro DATETIME DEFAULT GETDATE()
+);
+
+
+CREATE TABLE Tutor(
+    nombre VARCHAR(150) NOT NULL,
+    rut VARCHAR(12) PRIMARY KEY ,
+    correo VARCHAR(200) NOT NULL,
+    telefono VARCHAR(12),
+    carrera VARCHAR(50) NOT NULL 
 );
