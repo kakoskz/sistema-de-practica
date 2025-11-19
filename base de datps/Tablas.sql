@@ -44,3 +44,12 @@ CREATE TABLE Supervisor(
     telefono VARCHAR(12) NOT NULL,
     cargo VARCHAR(50) NOT NULL
 );
+
+
+CREATE TABLE Practica(
+    idPractica INT IDENTITY(1,1) PRIMARY KEY,
+    fechaDeInicio DATETIME GETDATE(),
+    fechaDeTermino DATETIME,
+    actividades VARCHAR(500) NOT NULL,
+    evidenciaImg VARCHAR(MAX) NOT NULL
+);
