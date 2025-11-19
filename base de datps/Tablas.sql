@@ -17,3 +17,12 @@ CREATE TABLE CentroPractica(
     habilidadesEsperadas TEXT ,
     direccion VARCHAR(250) NOT NULL
 )
+
+
+CREATE TABLE Bitacora(
+    idBitacora INT IDENTITY(1,1) PRIMARY KEY,
+    habilidadesDesarrolladas VARCHAR(500)NOT NULL,
+    desafios VARCHAR(500)NOT NULL,
+    logros VARCHAR(500)NOT NULL,
+    fechaRegistro DATETIME DEFAULT GETDATE()
+);
