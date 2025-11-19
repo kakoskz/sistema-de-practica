@@ -35,3 +35,12 @@ CREATE TABLE Tutor(
     telefono VARCHAR(12),
     carrera VARCHAR(50) NOT NULL 
 );
+
+
+CREATE TABLE Supervisor(
+    nombre VARCHAR(150) NOT NULL,
+    rut VARCHAR(12) PRIMARY KEY,
+    correo VARCHAR(150) NOT NULL,
+    telefono VARCHAR(12) NOT NULL,
+    cargo VARCHAR(50) NOT NULL
+);
