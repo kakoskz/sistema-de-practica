@@ -66,3 +66,10 @@ CREATE TABLE InformeTutor(
     enlaceInformeT VARCHAR(MAX) NOT NULL
 );
 
+
+CREATE TABLE Carrera(
+    idCarrera INT IDENTITY(1,1) PRIMARY KEY,
+    nombre VARCHAR(150) NOT NULL,
+    directorCarrera VARCHAR(150) NOT NULL,
+    facultad VARCHAR(200) NOT NULL
+);
