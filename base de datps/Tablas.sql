@@ -53,3 +53,9 @@ CREATE TABLE Practica(
     actividades VARCHAR(500) NOT NULL,
     evidenciaImg VARCHAR(MAX) NOT NULL
 );
+
+
+CREATE TABLE InformeSupervisor(
+    idInformeS INT IDENTITY(1,1) PRIMARY KEY,
+    enlaceInformeS VARCHAR(MAX) NOT NULL
+);
