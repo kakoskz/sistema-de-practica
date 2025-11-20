@@ -73,3 +73,9 @@ CREATE TABLE Carrera(
     directorCarrera VARCHAR(150) NOT NULL,
     facultad VARCHAR(200) NOT NULL
 );
+
+
+CREATE TABLE CompetenciaDesarrollo(
+    idCompeDes INT IDENTITY(1,1) PRIMARY KEY,
+    categoria VARCHAR(30) NOT NULL
+);
