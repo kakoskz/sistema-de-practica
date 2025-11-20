@@ -59,3 +59,10 @@ CREATE TABLE InformeSupervisor(
     idInformeS INT IDENTITY(1,1) PRIMARY KEY,
     enlaceInformeS VARCHAR(MAX) NOT NULL
 );
+
+
+CREATE TABLE InformeTutor(
+    idInformeT INT IDENTITY(1,1) PRIMARY KEY,
+    enlaceInformeT VARCHAR(MAX) NOT NULL
+);
+
